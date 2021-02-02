@@ -113,6 +113,46 @@ h4 {
   margin-right: 30px;
   
 }
+.change-color {
+  color: #212121;
+  display: block;
+}
+
+.change-color:hover,
+.change-color:focus {
+  color: #2196f3;
+}
+
+.change-color::after{
+  content: '';
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color:  #2196f3;;
+}
+
+
+
+
+.change-color-mail {
+  color: #757575;
+  fill:#757575;
+  display: flex;
+  align-items: center;
+}
+.change-color-mail:hover,
+.change-color-mail:focus,
+.contactable-info:hover {
+  color: #2196f3;
+  fill: #2196f3;;
+  
+}
 /*Загорловок*/
 .graybackground-page {
   height: 600px;
@@ -483,26 +523,8 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 }
 
 /* ссилки */
-.change-color {
-  color: #212121;
-}
-.change-color-mail {
-  color: #757575;
-  fill:#757575;
-  display: flex;
-  align-items: center;
-}
-.change-color-mail:hover,
-.change-color-mail:focus,
-.contactable-info:hover {
-  color: #2196f3;
-  fill: #2196f3;;
-  
-}
-.change-color:hover,
-.change-color:focus {
-  color: #2196f3;
-}
+
+
 .logo .change-color.current {
   color: #2196f3;
 }
