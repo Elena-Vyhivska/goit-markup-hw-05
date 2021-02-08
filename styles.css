@@ -160,7 +160,7 @@ color: #2196f3;;
   align-items: center;
   fill:#757575;
 }
-
+.currentlink,
 .change-color-mail:hover,
 .change-color-mail:focus,
 .contactable-info:hover {
@@ -766,3 +766,21 @@ background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
 }
+
+.modalbutton {
+  fill: #000000;
+  border-radius: 50px;
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+box-sizing: border-box;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}  
