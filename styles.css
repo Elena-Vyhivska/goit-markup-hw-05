@@ -144,11 +144,14 @@ h4 {
    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.currentlink:hover.change-color::after,
 .change-color:hover::after{
 opacity: 1;
 
 }
-
+.currentlink {
+color: #2196f3;;
+}
 
 .change-color-mail {
   color: #757575;
@@ -162,7 +165,8 @@ opacity: 1;
 .change-color-mail:focus,
 .contactable-info:hover {
   color: #2196f3;
-  fill: #2196f3;;
+  fill: #2196f3;
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 /*Загорловок*/
@@ -261,6 +265,40 @@ background: #F5F4FA;
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.itembox {
+position: relative;
+width: 370px;
+height: 294px;
+}
+
+.box-item {
+width: 370px;
+height: 294px;
+}
+
+.itboxprez {
+position: absolute;
+display: flex;
+width: 100%;
+height: 70px;
+bottom: 0;
+align-items: center;
+justify-content: center;
+background: rgba(47, 48, 58, 0.8);
+}
+
+.textitombox {
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color:#FFFFFF;
+position:relative;
+}
+
 /*секция 4 команда*/
 
 .comanda {
@@ -326,6 +364,7 @@ background-color: #fff;
 .master-linc:hover,
 .master-linc:focus {
   background: #2196f3;
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 }
 .mast {
@@ -341,6 +380,7 @@ background-color: #fff;
 .mast:hover {
   fill: #fff;
   background: #2196f3;
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Дополнительная секция*/
@@ -389,12 +429,14 @@ margin-right: 30px;
 .contmyfi:hover,
 .contmyfi:focus{
 fill: #2196f3;
+transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contmy:hover,
 .contmy:focus{
 border: solid #2196f3;
 color: #2196f3;
+transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -465,6 +507,7 @@ margin-top: 12px;
 .fotermast:hover,
 .fotermast:focus {
   background: #2196f3;
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textfoot{
@@ -478,46 +521,37 @@ line-height: 16px;
 
 /*Портфолио картинки*/
 
-.nev {
+.new {
   position: relative;
+  overflow: hidden;
     }
 
-.new::before {
 
-}    
-
-
-
-/*.nev .newpict {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  bottom: -0.5px;
-  padding: 63px 24px;
-  background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
-  transition: transform 250ms linear;
-  will-change: transform;
-  transition-property: background-color, transform;
+.new .newpict {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+bottom: -0.5px;
+padding: 63px 24px;
+background-color: rgba(33, 150, 243, 0.9);
+opacity: ;
+transform: translateY(+100%);
+transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .newpicttoo {
   font-size: 18px;
   line-height: 28px;
-  color: #992525;;
+  color:#FFFFFF
 }
 
-.toonew {
-      width: 370px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    outline: 1px solid #ececec;;
-    text-align: left;
-    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);;
-    transition-property: box-shadow, background-color, transform;
+.item-list:hover .newpict,
+.item-list:focus .newpict {
+transform: translateY(0);
+transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-*/
+
 
 .pictures-list{
   padding-bottom: 94px;
@@ -532,23 +566,12 @@ line-height: 16px;
  margin-bottom: 30px;
  position: relative;
  text-align: left;
- transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);;
+ transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
  transition-property: box-shadow, background-color, transform;
 
 }
     
 
-/*.item-list::before{
-  content: '';
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1000%;
- background: rgba(33, 150, 243, 0.9);
-
-}*/
 
 .item-list:hover,
 .item-list:focus-within {
@@ -556,6 +579,7 @@ background: #FFFFFF;
 border: 1px solid #EEEEEE;
 box-sizing: border-box;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feature-list {
@@ -679,12 +703,14 @@ header {
 
 .port-but:hover,
 .port-but:focus {
-   background-color: #2196f3;;
+   background-color: #2196f3;
+   transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-less:hover,
 .button-less:focus {
   color: #fff;
   background-color: #2196f3;
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -713,4 +739,30 @@ header {
   color: #757575;
   text-align: center;
   margin-top: 10px;
+}
+
+
+/*МОДАЛЬНОЕ ОКНО*/
+
+.dackdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.2);
+ 
+}
+.modal {
+position: absolute;
+width: 528px;
+height: 581px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
 }
