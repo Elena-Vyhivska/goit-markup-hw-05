@@ -572,6 +572,23 @@ transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
  transition-property: box-shadow, background-color, transform;
 
 }
+.toonew {
+  border: 1px solid #EEEEEE;
+ width: 370px;
+ 
+ margin-right: 30px;
+ margin-bottom: 30px;
+ position: relative;
+ text-align: left;
+ transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+ transition-property: box-shadow, background-color, transform;
+
+}
+.toonew:hover .newpict,
+.toonew:focus .newpict {
+transform: translateY(0);
+transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
     
 
 
